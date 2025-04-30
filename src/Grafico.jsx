@@ -7,10 +7,11 @@ import {
   LinearScale,
   PointElement,
   Tooltip,
-  Legend
+  Legend,
+  Filler
 } from 'chart.js';
 
-ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Tooltip, Legend);
+ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Tooltip, Legend, Filler);
 
 const Grafico = ({ labels, dataTemp, dataTempDS, dataHum }) => {
   const data = {
