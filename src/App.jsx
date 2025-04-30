@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Estación Meteorológica</h1>
+      <h1>Estación Meteorológica Cajica - Capellania</h1>
 
       <div className="tarjetas">
         <div className="card">
