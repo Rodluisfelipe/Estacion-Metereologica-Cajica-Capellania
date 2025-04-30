@@ -50,15 +50,15 @@ function App() {
       <h1>Estación Meteorológica Cajica - Capellania</h1>
 
       <div className="card-container">
-        <div className="card">
+        <div className="card temp1">
           <h2>{datos.temperatura ?? '---'}°C</h2>
           <p>Temperatura Interna</p>
         </div>
-        <div className="card">
+        <div className="card temp2">
           <h2>{datos.temperaturaDS ?? '---'}°C</h2>
           <p>Temperatura Ambiente</p>
         </div>
-        <div className="card">
+        <div className="card hum">
           <h2>{datos.humedad ?? '---'}%</h2>
           <p>Humedad Interna</p>
         </div>
