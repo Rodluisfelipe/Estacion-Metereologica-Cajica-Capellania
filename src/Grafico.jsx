@@ -12,15 +12,23 @@ import {
 
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement, Tooltip, Legend);
 
-const Grafico = ({ labels, dataTemp, dataHum }) => {
+const Grafico = ({ labels, dataTemp, dataTempDS, dataHum }) => {
   const data = {
     labels,
     datasets: [
       {
-        label: 'Temperatura (°C)',
+        label: 'Temperatura DHT11 (°C)',
         data: dataTemp,
         borderColor: '#007aff',
         backgroundColor: 'rgba(0,122,255,0.1)',
+        tension: 0.3,
+        fill: true,
+      },
+      {
+        label: 'Temperatura DS18B20 (°C)',
+        data: dataTempDS,
+        borderColor: '#ff9500',
+        backgroundColor: 'rgba(255,149,0,0.1)',
         tension: 0.3,
         fill: true,
       },
@@ -56,7 +64,11 @@ const Grafico = ({ labels, dataTemp, dataHum }) => {
     }
   };
 
-  return <div style={{ height: '300px', width: '100%' }}><Line data={data} options={options} /></div>;
+  return (
+    <div style={{ width: '100%', height: '400px' }}>
+      <Line data={data} options={options} />
+    </div>
+  );
 };
 
 export default Grafico;
