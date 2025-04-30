@@ -55,7 +55,7 @@ function App() {
           <p>Temperatura Interna</p>
         </div>
         <div className="card temp2">
-          <h2>{(datos.temperaturaDS-3 )?? '---'}°C</h2>
+          <h2>{(datos.temperaturaDS-2.8 ).toFixed(0)?? '---'}°C</h2>
           <p>Temperatura Ambiente</p>
         </div>
         <div className="card hum">
