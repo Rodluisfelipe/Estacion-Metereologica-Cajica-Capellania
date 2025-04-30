@@ -18,7 +18,7 @@ const Grafico = ({ labels, dataTemp, dataTempDS, dataHum }) => {
     labels,
     datasets: [
       {
-        label: 'Temperatura DHT11 (°C)',
+        label: 'Temperatura Ambiente (°C)',
         data: dataTemp,
         borderColor: '#007aff',
         backgroundColor: 'rgba(0,122,255,0.1)',
@@ -26,7 +26,7 @@ const Grafico = ({ labels, dataTemp, dataTempDS, dataHum }) => {
         fill: true,
       },
       {
-        label: 'Temperatura DS18B20 (°C)',
+        label: 'Temperatura Interna (°C)',
         data: dataTempDS,
         borderColor: '#ff9500',
         backgroundColor: 'rgba(255,149,0,0.1)',
